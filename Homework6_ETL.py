@@ -63,7 +63,7 @@ def create_table_load(cursor):
 
 
 with DAG(
-    dag_id = 'ELT_DAG',
+    dag_id = 'ETL_DAG',
     start_date = datetime(2024,10,27),
     catchup=False,
     tags=['ELT'],
