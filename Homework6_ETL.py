@@ -66,7 +66,7 @@ with DAG(
     dag_id = 'ETL_DAG',
     start_date = datetime(2024,10,27),
     catchup=False,
-    tags=['ELT'],
+    tags=['ETL'],
     schedule = '45 2 * * *'
 ) as dag:
     cursor = return_snowflake_conn()
